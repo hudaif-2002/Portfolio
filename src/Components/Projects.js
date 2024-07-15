@@ -1,17 +1,17 @@
 import React from 'react';
 import ProjectBox from './ProjectBox';
-import NewsletterImage from '../images/NewsletterImage.png';
-import RogfreeImage from '../images/RogfreeImage.png';
-import TindogImage from '../images/TindogImage.png';
+import RR from '../images/Restaurant-Reservation.png';
+import EB from '../images/EBharat.png';
+import CA from '../images/Contact-App.png';
 
 const Projects = () => {
   return (
     <div>
       <h1 className='projectHeading'>My <b>Projects</b></h1>
       <div className='project'>
-        <ProjectBox projectPhoto={NewsletterImage} projectName="Newsletter" />
-        <ProjectBox projectPhoto={RogfreeImage} projectName="RogFree" />
-        <ProjectBox projectPhoto={TindogImage} projectName="Tindog" />
+        <ProjectBox projectPhoto={RR} projectName="Restaurant_Reservation" />
+        <ProjectBox projectPhoto={EB} projectName="E_Bharat" />
+        <ProjectBox projectPhoto={CA} projectName="Contact_App" />
       </div>
 
     </div>
