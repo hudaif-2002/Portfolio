@@ -1,28 +1,32 @@
-import React from 'react'; 
-import {FaReact, FaJava, FaGitAlt, FaGithub, FaNpm, FaFigma, FaHtml5,FaCss3} from "react-icons/fa";
-import {DiNodejs, DiJavascript1} from "react-icons/di";
-import { SiMongodb, SiVercel} from "react-icons/si";
+import React from 'react';
+import { FaReact, FaGitAlt, FaGithub, FaDocker, FaHtml5, FaCss3, FaDatabase } from "react-icons/fa";
+import { DiPostgresql } from "react-icons/di";
+import { SiMicrosoftazure, SiBlazor, SiCsharp, SiDotnet } from "react-icons/si";
+import { GrActions } from "react-icons/gr";
+import { VscAzure } from "react-icons/vsc";
 
-const Skills = ({skill}) => {
-    const icon = {
-        HTML: <FaHtml5/>,
-        CSS:<FaCss3/>,
-        Java: <FaJava/>,
-        React: <FaReact/>,
-        Javascript: <DiJavascript1/>,
-        Node : <DiNodejs/>,
-        MongoDb : <SiMongodb/>,
-        Git : <FaGitAlt/>,
-        Github : <FaGithub/>,
-        Figma : <FaFigma/>,
-        Vercel : <SiVercel/>
-    }
-    
+const Skills = ({ skill }) => {
+  const icon = {
+    Csharp: <SiCsharp />,
+    DotNet: <SiDotnet />,
+    Azure: <SiMicrosoftazure />,
+    PostgreSQL: <DiPostgresql />,
+    EFCore: <FaDatabase />,
+    Docker: <FaDocker />,
+    GitHubActions: <FaGithub />,
+    Blazor: <SiBlazor />,
+    React: <FaReact />,
+    HTML: <FaHtml5 />,
+    CSS: <FaCss3 />,
+    Git: <FaGitAlt />,
+    GitHub: <FaGithub />,
+  };
+
   return (
     <div title={skill} className='SkillBox'>
-      {icon[skill]}
+      {icon[skill] || <span>{skill}</span>}
     </div>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;

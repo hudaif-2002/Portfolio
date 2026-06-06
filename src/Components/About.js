@@ -1,7 +1,7 @@
 import React from 'react';
 import Skills from './Skills.js';
 import Tilt from 'react-parallax-tilt';
-import Lottie from "lottie-react"
+import Lottie from "lottie-react";
 import Coder from '../LottieFiles/coder.json';
 
 const About = () => {
@@ -9,45 +9,49 @@ const About = () => {
     <>
       <div className='AboutPage'>
         <div className='AboutText'>
-          <h1 className='AboutTextHeading' >Get to <b>know</b> me!</h1>
+          <h1 className='AboutTextHeading'>Get to <b>know</b> me!</h1>
           <p>
-            Hi, my name is <b>Hudaif Ahamed</b> and I am from Mangalore, India.
-            I love to work on both <b>Web development</b> as well as <b>App development</b>. I am a final year college student pursuing <b>BE in CSE</b>. <br/><br/>
-            I have done an internship as a <b>Frontend developer</b> at Exelon Circuits.
-            I love to learn new things and upgrade myself. you can check out some of my work in the projects section.<br/><br/>
-            I am <b>open</b> to new collaborations or work where I can contribute and grow. Feel free to connect with me, links are in the footer.<br/>
-            </p>
+            Hi, I'm <b>Hudaif Ahamed</b> – a Software Developer with <b>2 years of experience</b> building
+            enterprise .NET microservices for Swedish and Norwegian energy companies at <b>EG India</b>.
+            <br /><br />
+            I specialise in <b>backend systems</b> – C#, ASP.NET Core (.NET 10), Azure, PostgreSQL, EF Core,
+            and secure identity with Keycloak/OAuth2. I also have frontend exposure with <b>Blazor</b>.
+            <br /><br />
+            I'm passionate about <b>scalable architecture</b>, <b>clean code</b>, and <b>automated CI/CD</b>.
+            I’ve deployed microservices to Azure Container Apps with GitHub Actions, achieving 99.2% uptime.
+            <br /><br />
+            I'm <b>open to work</b> – remote or on-site in India. Connect with me via the footer links.
+          </p>
         </div>
-
         <div>
           <Tilt>
-              <Lottie className="illustration" animationData={Coder} loop={true} />
+            <Lottie className="illustration" animationData={Coder} loop={true} />
           </Tilt>
         </div>
-
       </div>
-      
-      <h1 className='SkillsHeading'>Technical Skills</h1>
+
+      <h1 className='SkillsHeading'>.NET & Azure Stack</h1>
       <div className='skills'>
-        <Skills skill='Java' />
+        <Skills skill='Csharp' />
+        <Skills skill='DotNet' />
+        <Skills skill='Azure' />
+        <Skills skill='PostgreSQL' />
+        <Skills skill='EFCore' />
+        <Skills skill='Docker' />
+        <Skills skill='GitHubActions' />
+      </div>
+
+      <h1 className='SkillsHeading'>Also Familiar With</h1>
+      <div className='skills'>
+        <Skills skill='Blazor' />
         <Skills skill='React' />
-        <Skills skill='Node' />
-        <Skills skill='MongoDb' />
-        <Skills skill='Javascript' />
         <Skills skill='HTML' />
         <Skills skill='CSS' />
-        </div>
-     
-        <h1 className='SkillsHeading'>Basic Skills</h1>
-        <div className='skills'>
         <Skills skill='Git' />
-        <Skills skill='Github' />
-        <Skills skill='Figma' />
-        <Skills skill='Vercel' />
-        
+        <Skills skill='GitHub' />
       </div>
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

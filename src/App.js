@@ -6,7 +6,6 @@ import Footer from "./Components/Footer";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Resume from "./Components/Resume";
-import Project from "./Components/Projects";
 import MoveToTop from "./Components/MoveToTop";
 
 import Lottie from  "lottie-react";//Lottie is a React component that allows you to easily integrate Lottie animations into your React application. Lottie is a library that renders Adobe After Effects animations in real-time.
@@ -51,7 +50,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/About" element={<About/>}/>
-        <Route path="/Project" element={<Project/>}/>
         <Route path="/Resume" element={<Resume/>}/>
       </Routes>
       
